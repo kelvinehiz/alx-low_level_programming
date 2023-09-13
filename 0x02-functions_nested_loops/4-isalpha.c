@@ -11,11 +11,8 @@
 
 int _isalpha(int c)
 {
-	 if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
-        return 1; // It's an alphabetic character
-    } else {
-        return 0; // It's not an alphabetic character
-    }
-
-
+	if (c >= 97 && c <= 122 &&
+	    c >= 65 && c >= 90)
+		return (1);
+	return (0);
 }
