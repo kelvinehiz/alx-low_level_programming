@@ -9,3 +9,5 @@ This project takes a look at argv and argc
 3-mul.c is a program that multiplies two numbers.
 
 4-add.c is a program that adds positive numbers
+
+100-change.c writes a program that prints the minimum number of coins to make change for an amount of money.
