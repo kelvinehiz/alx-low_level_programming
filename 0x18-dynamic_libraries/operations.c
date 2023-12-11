@@ -1,29 +1,15 @@
 #include <stdio.h>
+#include "100-operations.h"
 
-int add(int a, int b);
-int sub(int a, int b);
-int mul(int a, int b);
-int div(int a, int b);
-int mod(int a, int b);
+int main() {
+    int a = 10;
+    int b = 5;
 
-int add(int a, int b)
-{
-    return a + b;
-}
+    printf("%d + %d = %d\n", a, b, add(a, b));
+    printf("%d - %d = %d\n", a, b, sub(a, b));
+    printf("%d * %d = %d\n", a, b, mul(a, b));
+    printf("%d / %d = %d\n", a, b, div(a, b));
+    printf("%d %% %d = %d\n", a, b, mod(a, b));
 
-int sub(int a, int b)
-{
-    return a - b;
-}
-int mul(int a, int b)
-{
-    return a * b;
-}
-int div(int a, int b)
-{
-    return a / b;
-}
-int mod(int a, int b)
-{
-    return a % b;
+    return 0;
 }
